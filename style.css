@@ -1,0 +1,31 @@
+h2{
+    color: orange;
+    height: 100px;
+    width: 50%;
+    
+    text-decoration: wavy gold underline;
+}
+button{
+    background-color: blue;
+    color: white;
+    height: 70px;
+    width: 150px;
+    text-align: center;
+    
+
+}
+p{
+    /* background-color: black; */
+    border: 2px solid black;
+    color: white;
+    height: 100px;
+    width: 50%;
+    text-align: left;
+    font-weight: 400;
+    text-decoration:wavy white;
+    
+}
+*{
+    background-color:teal;
+    
+}
