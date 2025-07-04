@@ -12,7 +12,7 @@
 
 . uppercase all the letters only using css (use Google) --> */
 
-h1{
+/* h1{
     font-family: league spartan;
     color: #ffa511;
     text-align: center;
@@ -23,4 +23,37 @@ h1{
     text-decoration: teal double underline;
     text-transform: uppercase;
 
+} */
+
+
+
+
+/* practice question 2  */
+
+p{
+    background-color: brown;
+    color: red;
+    line-height: 30px;
+}
+*{
+    text-align: center;
+    font-style: Georgia;
+}
+h1{
+    color: black;
+}
+a{
+    color: rgb(0,125,0);
+    text-decoration: none;
+}
+button{
+    color: white;
+    background-color: blueviolet;
+}
+textarea{
+    color: rgb(0,0,0);
+}
+#yoyo{
+    color: rgb(0,125,0);
+    text-decoration: none;
 }
