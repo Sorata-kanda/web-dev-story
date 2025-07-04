@@ -4,6 +4,11 @@ h2{
     width: 50%;
     
     text-decoration: wavy gold underline;
+    /* text-decoration: gold line-through; */
+    text-decoration: gold double overline;
+    /* text-decoration: red underline; */ 
+
+    letter-spacing: 10px;
 }
 button{
     background-color: blue;
@@ -19,13 +24,63 @@ p{
     border: 2px solid black;
     color: white;
     height: 100px;
-    width: 50%;
+    width: 70%;
     text-align: left;
-    font-weight: 400;
+    font-weight: 400; /* this is max 800 and normal is 400*/
     text-decoration:wavy white;
     
+    line-height: normal;
+    border: 2px solid black;
+
+    letter-spacing: 0.1px;
+
+    font-size: 15px;
+
+    font-family:avant garde,didot ,sans-serif;
 }
+
+
+
 *{
     background-color:teal;
     
 }
+
+a{
+    text-decoration: none;
+}
+
+
+/* 
+units :-
+---------Absolute
+
+px
+
+pt
+
+pc
+
+cm
+
+mm
+
+in
+
+1inch = 96 px
+1inch = 72pt
+12pt = 1pc
+---------Relative
+
+%
+
+em
+
+rem
+
+ch
+
+vh
+
+vw + many more
+*/
