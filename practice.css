@@ -31,8 +31,8 @@
 /* practice question 2  */
 
 p{
-    background-color: brown;
-    color: red;
+    color: brown;
+    text-align: center;
     line-height: 30px;
 }
 *{
@@ -40,7 +40,9 @@ p{
     font-style: Georgia;
 }
 h1{
-    color: black;
+    color: red;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 a{
     color: rgb(0,125,0);
@@ -52,8 +54,4 @@ button{
 }
 textarea{
     color: rgb(0,0,0);
-}
-#yoyo{
-    color: rgb(0,125,0);
-    text-decoration: none;
 }
