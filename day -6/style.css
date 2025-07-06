@@ -126,3 +126,8 @@ p::first-line{
 p::selection{
     background-color: rgb(231, 231, 119);
 }
+
+/* !important */
+p::selection{
+    background-color: green; /*now this can't be changed and this have the highest priority*/
+}
