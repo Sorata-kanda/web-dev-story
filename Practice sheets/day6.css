@@ -60,3 +60,21 @@ button{
     background-color: purple;
     color: azure;
 }
+
+
+div .main{
+    color: red;
+}
+.main{
+    color: blue;
+}
+#mainContent{
+    color: green;
+}
+h1{
+    color: yellow;
+}
+
+input[type="checkbox"]:checked+label{
+    color: darkgreen;
+}
