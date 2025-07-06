@@ -33,7 +33,9 @@ button:hover{
     background-color: yellow;
     color: blue;
 }
-.para:nth-of-type(3){
+.para:hover:nth-child(odd){
+    transition: 0.7s;
+    color: black;
     background-color: yellow;
 }
 *{
@@ -41,6 +43,7 @@ button:hover{
 }
 h1::first-letter{
     color: red;
+    font-size: 50px;
 }
 input[type="text"]:checked+label{
     color: red;
@@ -62,19 +65,16 @@ button{
 }
 
 
-div .main{
-    color: red;
-}
-.main{
-    color: blue;
-}
-#mainContent{
-    color: green;
-}
-h1{
-    color: yellow;
-}
+/* specifity precidence 
+- #mainContent
+- div .main 
+- .main
+- h1
+*/
 
 input[type="checkbox"]:checked+label{
     color: darkgreen;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.7s;
 }
