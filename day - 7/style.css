@@ -1,16 +1,58 @@
 div{
     height: 200px;
-    width: 500px;
-    background-color: greenyellow;
+    width: 800px;
+    background: skyblue;
     border: 2px solid black;
     margin-bottom: 10px;
     border-radius: 7px;
+    transition: background-color 0.7s;
+    margin-left: 25%;
 }
 
 h1{
+    color: white;
     border: 10px dashed green;
     width: 300px;
     border-right: 10px solid green;
     border-bottom: 10px double green;
     border-left:10px ridge green;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+button{
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 25px; /*top bottom ,, right left*/
+    padding: 10px 40px 10px 40px; /*top right bottom left*/
+    width:200px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-left: 43%;
+    
+}
+button:hover{
+    
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border:1px solid grey;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: 0.7s;
+    font-size: 20px;
+   
+}
+div:hover{
+    transition: 0.7s;
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border:1px solid grey;
+    font-size: large;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  
+    
+}
+body{
+    background-image: url("wallpaperflare.com_wallpaper (17).jpg");
+    background-size:cover;
 }
