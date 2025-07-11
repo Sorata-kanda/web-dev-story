@@ -1,0 +1,16 @@
+div{
+    height: 200px;
+    width: 500px;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin-bottom: 10px;
+    border-radius: 7px;
+}
+
+h1{
+    border: 10px dashed green;
+    width: 300px;
+    border-right: 10px solid green;
+    border-bottom: 10px double green;
+    border-left:10px ridge green;
+}
