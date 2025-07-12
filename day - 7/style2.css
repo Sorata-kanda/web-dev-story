@@ -1,0 +1,90 @@
+/* span{
+    background-color: transparent;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 70px; /*as we can see inline element lie span getting padding and margin only in right and left and it's also ignoring hegiht and width*/
+/* }
+div{
+    background-color: transparent;
+    border: 2px solid black;
+    height: 100px;
+    width: 200px;
+    padding: 50px;
+    margin: 70px;
+} */
+
+
+/*part 2 */
+
+/* div{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    background-color: greenyellow;
+    margin: 5px;
+    display: inline-block;
+}
+#div1{
+    display: none; /*This is to remove that particular element*/
+/* }*/ 
+
+
+
+/*part 3 */
+/* h1{
+    border: 2px solid black;
+}
+
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: pink;
+    margin: 50px;
+    border: 2px solid black;
+}
+#inner{
+    height: 100px;
+    width: 100px;
+    background-color: cornflowerblue;
+    margin-left: 10%;
+} */
+
+
+
+/*part -4*/
+
+/* #outer{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    background-color: pink;
+    font-size: 20px;
+}
+#inner{
+    height: 100px;
+    font-size:3em;
+    /* padding: 1em; */
+    /* padding: 60px; both are same ppadding 1em and padding 60px */
+      /* em is related to font size, 2em is like the double of the font of the outer div,
+     and padding:1em that is related to the inner div font size that is 3em - 60px, so padding is also 60px */ 
+    /* width: 100px;
+    background-color: cornflowerblue;
+} */ 
+
+/* button{
+    font-size: 50px;
+    border-radius : 15px;
+    border: 5px solid green;
+    padding-left: 1em;
+    padding-right: 1em;
+} */
+
+
+
+/* part - 5 */
+div{
+    /* font-size: 2em; This creating a snowball effect and to remove this we use rem , that is realted to root div */
+    font-size: 2rem; /*Now the font size is related to section(root) only*/
+}

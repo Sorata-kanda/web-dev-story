@@ -43,7 +43,7 @@ button:hover{
 div:hover{
     transition: 0.7s;
     background-color: transparent;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(80px);
     border:1px solid grey;
     font-size: large;
     color: white;
