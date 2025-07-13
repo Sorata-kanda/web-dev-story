@@ -1,0 +1,86 @@
+/* Part 1 */
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: rgba(255,0,0,0.5); /*the last value is the alpha channel value that is opacity of the color range from 0 ot 1 or 00 pt ff*/
+    /* background-color: #4dff00ff;    
+}
+#opacity{
+    background-color: orange;
+    opacity: 1 ;
+} */ 
+
+
+
+/* Part - 2 */
+
+/* div{
+    height: 200px;
+    width: 200px;
+    background-color: green;
+    /* transition-delay: 1s; */
+    /* margin-top: 10px; */
+    /* margin: 0 auto;
+    transition: border-radius 1s ease-in 0.1s, margin-top 1s ease-in 0.1s, background-color 1s ease-in 0.1s; */ 
+
+/* }
+div:hover{
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 150px;
+} */
+
+
+
+/* Part - 3 */
+/* section{
+    margin-top: 100px;
+
+}
+div{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background-color: greenyellow;
+    border: 2px solid black;
+    margin: 10px;
+}
+div:nth-of-type(2n){
+    background-color: yellow;
+}
+div:nth-of-type(3n){
+    background-color: darkgoldenrod;
+} */
+
+
+/* transform */
+
+/* #one{
+    transform: rotate(45deg);
+}
+#two{
+    /* transform: scale(0.5,2); */
+    /* transform: scaleX(0.5);
+}
+#three{
+    transform: translate(100px);
+}
+#four{
+    transform: skew(30deg);
+}
+#five{
+    transform: rotate(30deg) translateX(150px);
+}  */
+
+div{
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    margin: 0 auto;
+    border: 2px solid black;
+    text-align: center;
+    box-shadow: 2px 2px 8px black;
+    background-image: url(wallpaperflare.com_wallpaper\ \(17\).jpg);
+    /* background-size: contain; */
+    background-size: cover;
+}
