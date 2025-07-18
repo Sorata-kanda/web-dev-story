@@ -1,0 +1,43 @@
+#background{
+    background-color: white;
+    height: 300px;
+    width: 300px;
+
+}
+#big_circle{
+    background-color: rgb(255, 170, 0);
+    height: 99%;
+    width: 99%;
+    border-radius: 50%;
+}
+.eyes{
+    height: 50px;
+    width: 50px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+#eye1{
+    position: relative;
+    top: 60px;
+    left: 50px;
+    right: 20px;
+}
+#eye2{
+    position: relative;
+    top: 60px;
+    left: 130px;
+}
+#smile{
+    height: 70px;
+    width: 150px;
+    background-color: rgb(161, 3, 3);
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    top: 110px;
+    left: 65px;
+}
+body{
+    background-color: black;
+}
