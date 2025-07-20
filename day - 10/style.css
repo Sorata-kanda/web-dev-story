@@ -45,7 +45,7 @@
 
 
 /* Part -2 (css animation) */
-.box{
+/* .box{
     height: 100px;
     width: 500px;
     background-color: hotpink;
@@ -124,4 +124,59 @@
         
         
     }
+}
+
+ */
+
+
+
+/* Part - 3 */
+/* h1{
+    background-color: hotpink;
+    border: 2px solid black;
+} */
+
+/* @media (max-width: 400px){  max-width = 0 to range /// min-width = range to infinity /// width = at that specific point */
+    /* h1{
+        background-color: black;
+        color: hotpink;
+        border: 2px solid red;
+    }
+    div{
+        height: 100px;
+        width: 100px;
+        background-color: blue;
+    }
+}
+@media (min-width:200px) and (max-width:300px){
+    h1{
+        background-color: brown;
+    }
+}
+
+@media (orientation: landscape){
+    h1{
+        background-color:#00ADB5;
+    }
+} */
+
+
+
+
+/* Part -4 */
+.box{
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    background-color: pink;
+}
+.one{
+    background-color:aquamarine;
+    position: relative;
+    z-index: 1; /*to make it work that specific element should have a position // z-index use to show element upper or backward side of screen*/
+}
+.two{
+    background-color: darksalmon;
+    position: relative;
+    bottom: 50px;
 }
