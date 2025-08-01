@@ -8,24 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="navbar navbar-expand-sm fixed-top bg-primary">
-        <div class="container-fluid">
+    <div class="navbar navbar-expand-lg fixed-top bg-primary" data-bs-theme="dark">
+        <div class="container-fluid float-end">
             <a href="#" class="navbar-brand">Brand name</a>
 
-            <div class="navbar-toggler" data-bs-target="collapse">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
                 <span class="navbar-toggler-icon"></span>
-            </div>
+            </button>
 
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link" href="#">home</a>
-                    <a class="nav-link" href="">about</a>
-                    <a class="nav-link" href="">contact</a>
+                    <a class="nav-link" href="#">Home</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Contact</a>
                 </div>
             </div>
-
+            <form action="" class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
         </div>
-
     </div>
 
     <div class="container">
