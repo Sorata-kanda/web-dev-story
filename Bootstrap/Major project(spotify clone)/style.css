@@ -3,18 +3,20 @@ body{
     margin: 0;
     background-color: black;
     color: white;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 .main{
     display: flex;
     height: 100vh;
+    padding: 0.5rem;
 }
 
 .sidebar{
-    background-color: #black;
+    background-color: black;
     width: 340px;
     border-radius: 1rem /*16px*/;
+    margin-right: 0.5rem;
     
 }
 
@@ -49,8 +51,9 @@ a{
 
 }
 .nav-option{
-    line-height: 4.5rem;
+    line-height: 2.5rem;
     opacity: 0.7;
+    padding: 0.5rem 0.75rem;
 
 }
 .nav-option:hover {
@@ -62,4 +65,64 @@ a{
 }
 .nav-option a{
     font-size: 1rem;
+    margin-left: 1rem;
+}
+.library{
+    background-color: black;
+    border-radius: 1rem;
+    height: 100%;
+    margin-top: 0.5rem;
+}
+
+.options{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.75rem;
+}
+
+.lib-options img{
+    height: 1.25rem;
+    width: 1.25rem;
+}
+
+.icons{
+    font-size: 1.25rem;
+    display: flex;
+}
+
+.icons i{
+    margin-right: 1rem;
+    opacity: 0.7;
+}
+.icons i:hover{
+    opacity:1;
+}
+
+.box{
+    background-color: #232323;
+    height: 8rem;
+    border-radius: 0.75rem;
+    margin: 0.5rem 0 1.75rem 0;
+    padding: 0.75rem 1.25rem;
+
+}
+
+.box-p1{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.box-p2{
+    font-size: 0.75rem;
+    opacity: 0.9;
+}
+.badge{
+    background-color: white;
+    border-radius: 100px;
+    border: none;
+    padding: 0.25rem 1rem;
+    font-weight: 700;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: fit-content;
 }
