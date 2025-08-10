@@ -25,7 +25,7 @@ body{
     flex: 1;
     border-radius: 1rem;
     overflow: auto;
-
+    padding: 0 1.5rem 0 1.5rem;
 }
 
 .music-player{
@@ -125,4 +125,61 @@ a{
     margin-top: 0.5rem;
     height: 2rem;
     width: fit-content;
+}
+
+
+.sticky-nav{
+    position: sticky;
+    top: 0;
+    background-color: #121212;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0 1rem 0;
+}
+
+.sticky-nav-icons {
+    margin-left: 0.75rem;
+}
+
+.nav-item {
+    margin-right: 1rem;
+}
+
+.dark-badge{
+    background-color: black;
+    color: white;
+}
+
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #232323;
+    width: 150px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.card-img{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+.card-title{
+    font-weight: 700;
+}
+.card-info{
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
