@@ -68,7 +68,7 @@ a{
     margin-left: 1rem;
 }
 .library{
-    background-color: black;
+    background-color: #121212;
     border-radius: 1rem;
     height: 100%;
     margin-top: 0.5rem;
@@ -258,4 +258,83 @@ a{
     background-color: #1bd760;
     border-radius: 50%;
     margin-top: -6px;
+}
+
+.album-item img{
+    height: 3.5rem;
+    width: 3.5rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 25%;
+}
+.album-item{
+    display: flex;
+    
+    
+}
+.album{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+.album-info{
+    align-items: center;
+    opacity: 1;
+    margin-left: 0.5rem;
+    width: 160px;
+}
+.album-author{
+    font-size: 0.7rem;
+    margin: 0.1rem;
+    opacity: 0.6;
+    margin-bottom: 1rem;
+}
+.album-name{
+    margin: 0;
+    margin-top: 1.3rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    width: 50%;
+}
+.album-icons{
+    width: 25%;
+    
+}
+.album-icons i{
+    font-size: 13px;
+    margin-right: 0.2rem;
+    opacity: 0.7;
+    cursor: pointer; 
+}
+
+.album-info p {
+    white-space: nowrap;
+}
+
+.controls{
+    width: 25%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-left: 7%;
+}
+.controls-icons i{
+    opacity: 0.7;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+.controls-icons i:hover{
+    opacity: 1;
+}
+
+.controls-vol{
+    width: 50%;
+    margin-left: 1rem;
+}
+.vol-bar{
+    width: 90%;
+    margin-bottom: 10px;
 }
