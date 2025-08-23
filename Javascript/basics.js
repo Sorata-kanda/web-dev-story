@@ -4,7 +4,9 @@
 //assiemnt operators: +=, -=, *=, /=, %=, **=, ++, --
 //unary operators: ++, --, typeof
 //identifiers
-//we can cahnge type in js
+//we can change type in js
+//strings & null & undefined things completed! 
+//practice question done!
 
 
 
