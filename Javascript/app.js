@@ -113,3 +113,26 @@ if(size === "XL"){
     console.log(`Required packet doesn't exists`);
 } 
 
+//Logical Operators
+// logical not :- !
+
+console.log("\n");
+
+let marks  = 33;
+if(!(marks<33)){
+    console.log("Congrats:- you are passed");
+    console.log("Grade :- A");
+}
+console.log("\n");
+
+//question :- good string or not?
+
+let str1 = "aoai";
+if((str1[0] == 'a' || str1[0] == 'A') && str1.length > 3){
+    console.log("GOOD str");
+}else{
+    console.log("BAD str");
+}
+
+
+
