@@ -135,4 +135,83 @@ if((str1[0] == 'a' || str1[0] == 'A') && str1.length > 3){
 }
 
 
+//undefined and null , false, NaNm,  "", On  values 
+
+
+//swtich statment
+
+let colour = "red";
+
+switch(colour){
+    case "red" :
+        console.log("Stop");
+        break;
+    
+    case "yellow" :
+        console.log("Ready to go");
+        break;
+
+    case "green" :
+        console.log("GO Go Go");
+        break;
+
+    default :
+        console.log("Not a valid light");
+}
+
+console.log("\n");
+//day question
+
+let day = 4;
+switch(day){
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    case 4:
+        console.log("Thursday");
+        break;
+    case 5:
+        console.log("Friday");
+        break;
+    case 6:
+        console.log("Saturday");
+        break;
+    case 7:
+        console.log("Sunday");
+        break;
+    default :
+        console.log("Not a valid day");
+        break;
+}
+
+console.log("\n");
+//Alerts and promts
+
+// alert("This is a simple alert");
+// console.log("This is a log msg");
+// console.error("This is a error msg"); 
+// console.warn("This is a error msg");
+
+
+// //promts
+
+// let named = prompt("Fill your name:- ");
+// console.log(named);
+
+// let fn = prompt("Enter first name only");
+// let ln = prompt("Enter last name");
+// console.log(`WELCOME: ${fn} ${ln}`);
+
+// let msg = `WELCOME: ${fn} ${ln}`;
+// alert(msg);
+
+
+
+
 
