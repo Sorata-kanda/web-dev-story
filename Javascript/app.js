@@ -215,3 +215,27 @@ console.log("\n");
 
 
 
+//Strings methods
+// trim method :- remove whitespace from both end of strinf and return a new onw
+
+let msg = "    h el  lo  ";
+console.log(msg);
+console.log(msg.trim()); //it does not affect the real value it make new value
+//strings are immutable
+
+let strsome = "Rahul jangra";
+console.log(strsome);
+console.log(strsome.toLowerCase());
+console.log(strsome.toUpperCase());
+
+
+
+
+//method areguments;
+
+let name1 = "rahul";
+
+console.log(name1.indexOf("ul")); //This will give the first letter of the string you are trying to find
+console.log(name1.indexOf("b"));  // -1  when not found
+console.log(name1.indexOf("L")); //-1 as this is case sensitve, //the string we passing is known as arguments  
+
