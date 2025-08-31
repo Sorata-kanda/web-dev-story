@@ -239,3 +239,42 @@ console.log(name1.indexOf("ul")); //This will give the first letter of the strin
 console.log(name1.indexOf("b"));  // -1  when not found
 console.log(name1.indexOf("L")); //-1 as this is case sensitve, //the string we passing is known as arguments  
 
+
+
+
+//methos chaining
+
+let msg2 =  "   helllo";
+let newmsg = msg2.trim();
+console.log(newmsg);
+console.log("after trim: ", newmsg.toUpperCase());
+
+let shortcut = msg2.trim().toUpperCase();
+console.log(shortcut);
+
+
+//slice
+
+let ex = "ILoveCoding";
+console.log(ex.slice(5));
+console.log(ex.slice(1,5)); // last range is exclusive
+
+console.log(ex.slice(-5,-2)); //-ve number will get minus from the length of the str , exmaple :- 11 - 5 = 6 , 11 - 2 = 9
+
+
+//replace
+console.log(ex.replace("Love", "Do")); //only repalce first occurance of that element
+//repeat
+console.log(ex.repeat(2)); 
+let fruit = "Mango lassi sabse sasti.....\n";
+console.log(fruit.repeat(5));
+
+
+let space = "\n";
+console.log(space.repeat(5));
+
+
+//Arrays -----------------------------------------------------
+
+let arr = ["aman", "Shradha", "Rahul"];
+console.log(arr);
