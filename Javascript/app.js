@@ -278,3 +278,59 @@ console.log(space.repeat(5));
 
 let arr = ["aman", "Shradha", "Rahul"];
 console.log(arr);
+
+
+let nums = [2, 4, 6, 8];
+console.log(nums[2]);
+console.log(nums.length);
+console.log(typeof(nums)); //  objects??
+
+
+
+let info = ["aman" , 28, 89.9];
+console.log(info);
+
+let emyArr = [];
+console.log(emyArr);
+
+console.log(info[0][0]) // it will give element on 0 and it's 0th indx
+
+
+//array are mutable
+
+let fruits = ["mango", "apple", "kiwi"];
+console.log(fruits);
+fruits[1] = "banana";
+console.log(fruits);
+fruits[11] = "papaya";
+console.log(fruits); //now we have some empty indx in array
+
+
+//array methods:-    push, pop, unshift, shift
+
+let cars = ["BMW", "Toyota" , "Maruti", "Lamborgini", "Ferrari"];
+console.log(cars);
+
+cars.push("Porche");
+console.log(cars);
+
+cars.pop();
+console.log(cars);
+
+cars.shift() // delete something from start
+console.log(cars);
+
+cars.unshift("Auddi"); //add something in start
+console.log(cars);
+
+
+//question
+let month = ["january", "july", "march", "August"];
+//convert the rray to this:-   ["january", "june", "march", "August"]
+// month[1] = 'june'; //mehtod: 2
+month.shift();
+month.shift();
+month.unshift("june");
+month.unshift("january");
+
+console.log(month); 
