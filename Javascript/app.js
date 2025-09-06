@@ -334,3 +334,58 @@ month.unshift("june");
 month.unshift("january");
 
 console.log(month); 
+
+let primary = ["red" , "green", "blue"];
+console.log(primary.indexOf("blue"));
+console.log(primary.indexOf("green"));
+console.log(primary.indexOf("white"));
+
+//incldues :- return true if found else flase 
+console.log(primary.includes("red"));
+console.log(primary.includes("green"));
+console.log(primary.includes("white"));
+
+//concat
+let arr1 = [1, 2, 3];
+let arr2 = [4, 5, 6];
+let arr3 = arr1.concat(arr2);
+console.log(arr3);
+let arr4 = arr1.concat(arr2).reverse();
+console.log(arr4);
+
+
+
+// slice [do cahnge in a copy]
+
+let arr5 = [1, 2, 3, 4, 5, 6];
+console.log(arr5.slice(1, 4));
+console.log(arr5.slice(1));
+console.log(arr5.slice(-2));
+
+
+//splice {do change in original array]}
+// format - splice(start, deletecount, adding:- item1, item2, item3)
+let colors = ["red", "green", "blue", "yellow"];
+console.log(colors.splice(3));
+console.log(colors);
+console.log(colors.splice(0, 1, "black", "Grey"));
+console.log(colors);
+
+
+//sort {this conver your whole array to string then check the order , not good to use on integers}
+// let arr6 = [1, 2, 3, 4, 5, 6];
+// console.log(arr6.sort());
+// console.log(arr6.reverse());
+console.log(colors.sort());
+
+
+//practice qusetion:-
+
+let months = ['january', 'july', 'march', 'august'];
+//convert to this :- ['july', 'june', 'march', 'august'] using splice
+console.log(months.splice(0,2,'july','june'));
+console.log(months);
+
+let languages = ['c','c++','html','javascript','python','java','c#','sql'];
+console.log(languages.reverse());
+console.log(languages.indexOf('javascript'));
