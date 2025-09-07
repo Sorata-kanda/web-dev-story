@@ -389,3 +389,25 @@ console.log(months);
 let languages = ['c','c++','html','javascript','python','java','c#','sql'];
 console.log(languages.reverse());
 console.log(languages.indexOf('javascript'));
+
+
+//array refrences
+let arrr7 = [];
+let arrr = []
+console.log(arrr == arrr7); // this will give false as arr sotres the address
+let arr7 = [1, 2, 3];
+let arr8 = arr7;
+console.log(arr7);
+console.log(arr8 == arr7);
+console.log(`added arr 8 :- ${arr8.push('abra ka dabra')}`);
+console.log(arr7);
+
+//const :- //we can do any operations even after the making the const array but we can't change the whole array to a new array 
+
+const arr9 = [1, 2, 3];
+console.log(arr9);
+arr9.push(4);
+console.log(arr9);
+
+//nested array
+
