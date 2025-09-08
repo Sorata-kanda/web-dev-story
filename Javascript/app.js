@@ -411,3 +411,63 @@ console.log(arr9);
 
 //nested array
 
+let arr10 = [[1,2], [3,4], [4,5]];
+console.log(arr10);
+console.log(arr10[0]);
+console.log(arr10.length);  
+console.log(arr10[0][1]);
+
+//practice question:- creaet a nested array to show the following tic - tac - toe game
+
+let ticTacToe = [
+    ['X', null, 'O'],
+    [null, 'X', null],
+    ['O', null, 'X']
+]
+console.log(ticTacToe);
+
+ticTacToe[0][1] = 'O';
+console.log(ticTacToe);
+
+
+
+//Practice sheet question:-
+
+/* Qs1. Write a JavaScript program to get the first n elements of an array. [n can be any
+positive number].
+For example: for array [7, 9, 0, -2] and n=3
+Print, [7, 9, 0]*/
+
+let arr11 = [7, 9, 0, -2];
+let n11 = 3;
+console.log(arr11.slice(0,n11));
+
+/* Qs2. Write a JavaScript program to get the last n elements of an array. [n can be any
+positive number].
+For example: for array [7, 9, 0, -2] and n=3
+Print, [9, 0, -2]*/
+
+console.log(arr11.reverse().slice(0,n11).reverse());
+
+
+//Qs3. Write a JavaScript program to check whether a string is blank or not.
+
+let string = "";
+if(string  === ""){
+    console.log("empty");
+}else{
+    console.log("string is not empty");
+}
+
+/*Qs4. Write a JavaScript program to test whether the character at the given (character)
+index is lower case. */
+
+let string_arr = ['z','b','c'];
+let idx = 2;
+console.log(string_arr[idx].toLowerCase() === string_arr[idx]);
+
+
+//Qs5. Write a JavaScript program to strip leading and trailing spaces from a string.
+
+let love = "    And there is something and there is nothing ♫♫♫...  in your eyes there is a ...   "
+console.log(love.trim());
