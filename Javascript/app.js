@@ -471,3 +471,6 @@ console.log(string_arr[idx].toLowerCase() === string_arr[idx]);
 
 let love = "    And there is something and there is nothing ♫♫♫...  in your eyes there is a ...   "
 console.log(love.trim());
+
+
+//Done some practice question in chrome , so there is not much of code , on day 4
