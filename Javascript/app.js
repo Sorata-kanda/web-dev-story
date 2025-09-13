@@ -474,3 +474,45 @@ console.log(love.trim());
 
 
 //Done some practice question in chrome , so there is not much of code , on day 4
+
+
+//Loops
+
+for(let i = 0; i < 5; i++){
+    console.log(i);
+}
+
+console.log("\n");
+
+for(let i =4 ; i >= 0; i--){
+    console.log(i);
+}
+
+//pinting all odd numbers from 1 to 15
+console.log("\n");
+
+for(let i=1; i<=15; i++){
+    if(i%2!=0){
+        console.log(i);
+    }
+}
+
+//pinting all even numbers from 1 to 15
+console.log("\n");
+
+for (let i = 1; i <= 15; i++) {
+    if (i % 2 == 0) {
+        console.log(i);
+    }
+}
+
+console.log("\n");
+
+// table of user:- 
+
+// let user_given = prompt("Enter your number");
+// user_given = parseInt(user_given); //This will take int value from string if int is written in start of string!!
+// for(let i=1; i<=10; i++){
+//     console.log(`${user_given} x ${i} = ${user_given*i}`);
+// }
+
