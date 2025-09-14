@@ -516,3 +516,59 @@ console.log("\n");
 //     console.log(`${user_given} x ${i} = ${user_given*i}`);
 // }
 
+
+
+//---------Nested loops---------------------
+console.log("\n");
+for(let i=1;i<=3; i++){
+    console.log(`outer loop:- ${i}`)
+    for(let j=1; j<=3;j++){
+        console.log(j);
+    }
+}
+console.log("\n");
+
+//======while loop
+
+let l=1;
+while(l<=5){
+    console.log(`While loop:- ${l}`);
+        l++;
+}
+
+
+let u =0;
+while(u<=20){
+    console.log(u);
+    u++;
+}
+console.log("\n");
+
+//Ask user our favruite movie
+
+// let fav = "Avatar";
+// let user_guess = prompt("Enter the guess");
+// console.log("press 1 to exit ,  2 to edit the movie name");
+
+// while(user_guess!=fav){
+//     if (user_guess == "1") {
+//         break;
+//     }
+//     if(user_guess == "2"){
+//         fav = prompt("Change movie name: ");
+//         console.log(`"movie name change to :- ${fav}"`);
+//         user_guess = prompt("Enter the guess again:- ");
+//         if(user_guess == fav){
+//             break;
+//         }
+//     }
+//     alert("Wrong guess, Try again:- {Press 1 to exit}");
+//     console.log("Wrong guess, Try again:- {Press 1 to exit}");
+//     user_guess = prompt("Enter the guess again:- ");
+    
+// }
+// if(user_guess == fav){
+//     console.log("guess is right");
+// }
+// console.log("Game ended!");
+
