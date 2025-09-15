@@ -572,3 +572,54 @@ console.log("\n");
 // }
 // console.log("Game ended!");
 
+
+
+//loops in arrays
+
+let numbers = [1,2,3,4,5];
+numbers.push("Fuck you");
+for(let i=0; i<numbers.length; i++){
+    console.log(`${i}, ${numbers[i]}`);
+}
+console.log("\n");
+
+//nested array
+
+let heros = [["Ironman", "spiderman", "Thore"], ["superman", "Batman", "Wonder woman"]];
+
+for(let i=0;i<heros.length; i++){
+    console.log(`----List #${i}`);
+    for(let j=0;j<heros[i].length;j++){
+        console.log(heros[i][j]);
+    }
+}
+console.log("\n");
+
+let students = [["aman",95], ["shradha", 94.5],["Rahul",32]];
+for(let i=0; i<students.length; i++){
+    console.log(`----student ❤︎${i}`);
+    for(let j=0; j<students[i].length;j++){
+        console.log(students[i][j]);
+    }
+}
+console.log("\n\n");
+
+//for of loop
+
+for(fruit of fruits){
+    console.log(fruit);
+}
+console.log("\n");
+
+for(char of "Shriou Neko"){
+    console.log(char);
+}
+
+//nested array by for of loop
+
+for(list of heros){
+    console.log(list);
+    for(listed of list){
+        console.log(listed);
+    }
+}
