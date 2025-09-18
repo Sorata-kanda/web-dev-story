@@ -67,3 +67,58 @@ for(let i=0; i<array.length; i++){
     }
 }
 console.log(maxi);
+
+
+console.log("\n\nPart - 5")
+//Qs1. Create a program that generates a random number representing a dice roll.
+// [The number should be between 1 and 6].
+
+
+
+// let random = Math.floor(Math.random()*6 + 1);
+// let roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+// while(true){
+//     if(roll == "roll"){
+//         alert(`Number is: ${random}`);
+//         roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+//         random = Math.floor(Math.random() * 6 + 1);
+
+//     }
+//     else if(roll == "quit"){
+//         alert("quited dice rolling succesfully");
+//         break;
+//     }
+//     else{
+//         alert("Enter value is not valid\nPlease try again:");
+//         roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+
+//     }
+// }
+
+
+
+//Qs2. Create an object representing a car that stores the following properties for the
+// car: name, model, color.
+// Print the car’s name.
+
+let car = {
+    name: "Ferrari",
+    model: "F8 Tributo",
+    color: "red"
+}
+console.log(car["name"]);
+
+
+//Qs3. Create an object Person with their name, age and city.
+// Edit their city’s original value to change it to “New York”.
+// Add a new property country and set it to the United States.
+
+let person = {
+    name : "Rahul",
+    age : "18",
+    city : "Hisar",
+}
+person.city = "New York"
+person.county = "United States";
+
+console.log(person);
