@@ -145,24 +145,86 @@ console.log(s4);
 //making a guessting game
 
 
-let max = parseInt(prompt("Enter the max range: "));
+// let max = parseInt(prompt("Enter the max range: "));
 
-while(true){
+// while(true){
     
-    let gamer = Math.floor(Math.random() * max + 1);
-    console.log(`machine guess: ${gamer}\nNote: you can press quit to exit`);
-    let guess = prompt("Enter the number between 2 to 10: ");
+//     let gamer = Math.floor(Math.random() * max + 1);
+//     console.log(`machine guess: ${gamer}\nNote: you can press quit to exit`);
+//     let guess = prompt("Enter the number between 2 to 10: ");
 
-    if (guess == "quit") {
-        alert("Game over. Exiting the game...");
-        break;
-    }
-    else if(parseInt(guess) == gamer){
-        alert("Congrats, you win!\nExiting the game now...");
-        break;
+//     if (guess == "quit") {
+//         alert("Game over. Exiting the game...");
+//         break;
+//     }
+//     else if(parseInt(guess) == gamer){
+//         alert("Congrats, you win!\nExiting the game now...");
+//         break;
 
-    } else{
+//     } else{
         
-        alert("Try Again: ");
+//         alert("Try Again: ");
+//     }
+// }
+
+
+//----------------------------Part - 6-----------
+//functions:-
+
+function fun(){
+    console.log("hello, this is a function");
+}
+
+fun();
+
+function printer(){
+    for(let i=1; i<=5 ; i++){
+        console.log(i);
     }
 }
+printer();
+
+function isAdult(){
+    let age = 18;
+    if(age>=18){
+        console.log("Adult");
+    }else{
+        console.log("Not Adult");
+    }
+}
+
+isAdult();
+
+
+function Print(){
+    console.log("Twinkle Twinkle little star\nhow i wonder what you are?")
+}
+
+Print();
+
+//quest :- make a funciton of dice roller:-
+
+
+function dice(){
+    let random = Math.floor(Math.random()*6 + 1);
+    let roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+    while(true){
+        if(roll == "roll"){
+            alert(`Number is: ${random}`);
+            roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+            random = Math.floor(Math.random() * 6 + 1);
+
+        }
+        else if(roll == "quit"){
+            alert("quited dice rolling succesfully");
+            break;
+        }
+        else{
+            alert("Enter value is not valid\nPlease try again:");
+            roll = prompt("Type 'quit' to quit rolling\nType 'roll' to roll the dice\nRoll the dice: ");
+
+        }
+    }
+}
+dice();
+
