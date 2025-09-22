@@ -226,5 +226,75 @@ function dice(){
         }
     }
 }
-dice();
+// dice();
+
+
+//fucntions with arguments
+
+function f1(named,age){
+    console.log(`${named} is ${age} years old`);
+}
+
+let named = "Someone's name";
+let aged = 20;
+f1(named,aged);
+
+
+function summed(a,b){
+    console.log(a+b);
+}
+summed(10,20);
+
+
+//create a funcition that gives avg of 3 numbers:-
+
+function calAvg(a,b,c){
+    console.log((a+b+c)/3);
+}
+
+calAvg(20,20,20);
+
+function table(a){
+    for(let i=1; i<=10; i++){
+        console.log(`${a} x ${i} = ${a*i}`);
+    }
+}
+
+let mul = 5;
+table(5);
+
+
+function caller(a,b){
+    return a+b;
+}
+console.log(caller(caller(1,2),3));
+
+
+//create a function that gives sum of number 1 to n
+
+function smart(n){
+    let summ = 0;
+    for(let i=1; i<=n;i++){
+        summ += i;
+    }
+    return summ;
+}
+
+console.log(smart(100));
+
+
+//create a  function that return the concatination if all string in an array.
+let str = ["hi", "hello","bye", "!"];
+
+function concater(str){
+    let result ="";
+    for(let i=0; i<str.length; i++){
+        result += str[i];
+    }
+    return result;
+}
+console.log(concater(str));
+
+
+
 
