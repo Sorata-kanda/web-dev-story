@@ -297,4 +297,122 @@ console.log(concater(str));
 
 
 
+// block scope
 
+{
+    var a = 25;
+    let b = 60;
+}
+
+console.log(a);
+// console.log(b); // this will give an error
+
+//lexical scope
+ 
+function outfunc(){
+    let x = 5;
+    let y = 6;
+    function innerfunc(){
+        console.log(x);
+    }
+
+    innerfunc();
+}
+
+console.log(outfunc());
+
+
+//function expression
+
+let name = "Shirou";
+
+let sum  = function(a,b){
+    return a+b;
+}
+console.log(sum(1,2));
+
+
+
+
+//high order function
+function mulgreet(func, count){
+    for(let i=1; i<=count;i++){
+        func();
+    }
+}
+
+let greet = function(){
+    console.log("hello");
+}
+
+console.log(mulgreet(greet,7));
+
+
+//-----------------------------
+
+let odd = function(n){
+    console.log(!(n%2 == 0));
+}
+let even = function (n) {
+    console.log((n % 2 == 0));
+}
+
+function factory(request){
+    if(request == "odd"){
+        return function (n) {
+            console.log(!(n % 2 == 0));
+        }
+        
+    }else if(request == "even"){
+        return  function (n) {
+            console.log((n % 2 == 0));
+        }
+        
+    }else{
+          console.log("wrong request");
+    }
+
+}
+
+let request = "odd";
+
+
+let product = factory(request);
+console.log(product);
+console.log(product(45));
+
+
+
+//methods
+
+const calc = {
+    num: 55,
+    add: function(a,b){
+        return a+b;
+    },
+    sub: function(a,b){
+        return a-b;
+    },
+    mul: function(a,b){
+        return a*b
+    }
+}
+
+console.log(calc.add(4,5));
+console.log(calc.sub(4, 5));
+console.log(calc.mul(4, 5));
+
+
+//same upper locgic using shorthand
+// const calc = {
+//     num: 55,
+//     add(a, b) {
+//         return a + b;
+//     },
+//     sub(a, b) {
+//         return a - b;
+//     },
+//     mul(a, b) {
+//         return a * b
+//     }
+// }
