@@ -122,3 +122,83 @@ person.city = "New York"
 person.county = "United States";
 
 console.log(person);
+
+
+
+
+//-----------------Part - 6
+
+//Qs1. Write a JavaScript function that returns array elements larger than a number
+
+function returner(strr){
+    console.log(strr);
+}
+
+let str = "alkkkssasaswoiiiiasdsss";
+returner(str);
+
+// Qs2.Write a JavaScript function to extract unique characters from a string.
+//     Example: str = “abcdabcdefgggh” ans = “abcdefgh”
+
+function deleteer(str){
+    let str1 = "";
+    for(let i=0; i<str.length; i++){
+        if(str[i]!=str[i+1])
+        str1 += str[i];
+    }
+    console.log(str1);
+}
+let str2 = "Rahulll"
+deleteer(str);
+
+
+//Qs3. Write a JavaScript function that accepts a list of country names as input and
+// returns the longest country name as output.
+//     Example : country = ["Australia", "Germany", "United States of America"] output:
+// "United States of America"
+
+
+function longer(country){
+    let bigger = "";
+    for(let i=0;i<country.length; i++){
+        
+            if(country[i].length > bigger.length){
+                bigger = country[i];
+            }            
+
+    }
+    console.log(bigger);
+
+}
+let country = ["Australia", "Germany", "United States of America"];
+
+longer(country);
+
+
+//Qs4. Write a JavaScript function to count the number of vowels in a String
+// argument.
+
+stringg = "Rahul";
+let counter = 0;
+for(let i=0; i<stringg.length; i++){
+    let char = stringg[i].toLowerCase();
+    if(char === 'a' || char === 'e' || char === 'i' || char === 'o' || char === 'u'){
+        counter++;
+    }
+}
+console.log(counter);
+
+
+//Qs5. Write a JavaScript function to generate a random number within a range
+// (start, end).\
+
+function randomiser(start,end){
+    let diff = end - start;
+    let ran = Math.floor(Math.random() * diff ) + start;
+    return ran;
+}
+
+let start = 10;
+let end = 30;
+console.log(randomiser(start,end));
+
