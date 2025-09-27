@@ -59,9 +59,107 @@ try{
     console.log(mul(2,3));
 
 
+    //====set timeout
+    console.log("hi there");
+    // setTimeout(() => {
+    //     console.log("Welcome to javascript basics");
+    // }, 4000);
+    console.log("welcome to");
+
+
+    //===set interval :- it keeps running, so we need to stop it sometimes too..
+    let id = setInterval(() => {
+        console.log("This is a js basics file");
+    }, 1000);
+
+    console.log(id);
+    clearInterval(id);
+
+
+
+    //====this with arrow functions
+
+    //This is different for both function and arrow function,
+    //for normal function it depends on it's caller/object 
+    //but for arrow function it depends on it's parent scope  
+
+    let stu = {
+        name : "rahul",
+        marks : 95,
+        prop : this,
+        getNames :  function(){
+            console.log(this);
+            return this.name;
+        },
+
+        getMarks: () => {
+            console.log(this);
+            return this.name;
+        },
+
+        // getInfo1 : function(){
+        //     setTimeout(() => {
+        //         console.log(this);   //student
+        //     }, 2000);
+        // },
+        // getInfo2 : function(){
+        //     setTimeout(function(){
+        //         console.log(this);  //window
+        //     },2000);
+        // }
+
+    }
+    console.log(stu.getNames());
+    console.log(stu.getMarks());
+
+    // console.log(stu.getInfo1());
+    // console.log(stu.getInfo2());
+
+
+
+
+
+
 }catch(err){
     console.log("we got fucked");
     console.log("\n");
     console.log(err);
 }
 
+
+
+
+
+
+
+//--------------pratice question
+
+try{
+    //Write an arrow function that returns the square of a number n
+
+    const square = (n) =>{
+        console.log(n*n);
+    }
+
+    console.log(square(2));
+
+    //Write a funciton that prints "hello world" 5 times at interval of 2s each
+    let count =0;
+    let func = function(){
+        let ide = setInterval(() => {
+        console.log("Hello world");
+        count++;
+            if (count >= 5) {
+                clearInterval(ide);
+                console.log("Interval stopped!");
+            }
+        }, 1000);   
+    }
+    console.log(func());
+
+
+}catch(er){
+    console.log("Something goes wrong, err is below");
+    console.log("\n");
+    console.log(er);
+}
