@@ -202,3 +202,79 @@ let start = 10;
 let end = 30;
 console.log(randomiser(start,end));
 
+
+console.log("\n\n");
+
+
+//------------------Part -7
+try{
+
+    //Qs1. Write a arrrow function name arrayAverage that accepts and 
+    //array fo number and returns the average of those numbers.
+    let arr1 = [90,18];
+    let arrayAverage = (arr) =>{
+        let count = 0;
+        let sum =0;
+        for(let i=0; i<arr.length;i++){
+            count++;
+            sum += arr[i];
+        }
+        console.log(`sum ${sum} and count ${count}`);
+        let avg = sum/count;
+        return avg;
+    }
+
+    console.log(arrayAverage(arr1));
+
+
+    // Qs2. Write an arrow function named isEven() that takes a single number as argument
+    // and returns if it is even or not.
+
+    let num = 40;
+    let Even = (n) =>{
+        if(n%2==0){
+            return(`The number ${n} is EVEN!!!`);
+        }else{
+            return(`The number ${n} is NOT EVEN!!!`);
+        }
+    }
+
+    console.log(Even(num));
+
+
+    // Qs3. What is the output of the following code :
+    const object = {
+        message: 'Hello, World! ',
+        logMessage () {
+            console.log (this.message);
+        }
+    };
+    setTimeout(object.logMessage, 1000);
+
+    // Qs4. What is the output of the following code :
+
+    let length = 4;
+    function callback(){
+        console.log(this.length);
+    }
+    const obj = {
+        length: 5,
+        method(callbac){
+            callback(123);
+        },
+    };
+
+    console.log(obj.method(123));
+
+
+
+
+
+
+}catch(err){
+    console.log("We got fucked");
+    console.log("Error is below");
+    console.log("\n");
+    console.log(err);
+
+}
