@@ -134,29 +134,167 @@ try{
 
 //--------------pratice question
 
+// try{
+//     //Write an arrow function that returns the square of a number n
+
+//     const square = (n) =>{
+//         console.log(n*n);
+//     }
+
+//     console.log(square(2));
+
+//     //Write a funciton that prints "hello world" 5 times at interval of 2s each
+//     let count =0;
+//     let func = function(){
+//         let ide = setInterval(() => {
+//         console.log("Hello world");
+//         count++;
+//             if (count >= 5) {
+//                 clearInterval(ide);
+//                 console.log("Interval stopped!");
+//             }
+//         }, 1000);   
+//     }
+//     console.log(func());
+
+
+// }catch(er){
+//     console.log("Something goes wrong, err is below");
+//     console.log("\n");
+//     console.log(er);
+// }
+
+
+
+
 try{
-    //Write an arrow function that returns the square of a number n
-
-    const square = (n) =>{
-        console.log(n*n);
+    let arr1 = [1,2,3,4,5];
+    let print = function(el){
+        console.log(el);
     }
 
-    console.log(square(2));
+    arr1.forEach(print);
 
-    //Write a funciton that prints "hello world" 5 times at interval of 2s each
-    let count =0;
-    let func = function(){
-        let ide = setInterval(() => {
-        console.log("Hello world");
-        count++;
-            if (count >= 5) {
-                clearInterval(ide);
-                console.log("Interval stopped!");
+
+
+    let arr2 = [{
+        name: "rahul",
+        marks: 98,
+
+    },
+    {
+        name: "aman",
+        marks: 97,
+    },
+    {
+        name : "shradha",
+        marks: 95,
+    }];
+
+    arr2.forEach((stud) => {
+        console.log(stud.marks);
+    })
+
+
+    //Map function
+    let num = [1,2,3,4,5];
+    let double = num.map((el) =>{
+        return el*el;
+    })
+    console.log(double);
+
+
+    let gpa = arr2.map((el) => {
+        return el.marks/10;
+    })
+    console.log(gpa);
+
+
+    //filter function
+    let nums = [1,2,3,4,5,6,7,8,9,10];
+    let ans = nums.filter((el) =>{
+        return el%2 ==0;
+    })
+    console.log(ans);
+
+    //every method :- can only return true or either false, this will return true if for every single elment our ans is true and vica versa
+
+    let ans2 = nums.every((el) => {
+        return el%2==0;
+    })
+    console.log(ans2);
+
+    //some
+    let ans3 = nums.some((el) => {
+        return el%2 == 0;
+    })
+
+    console.log(ans3);
+
+    //reduce
+
+    let ans4 = nums.reduce((res,el) => res+el);
+    console.log(ans4);
+
+
+    let maxer  = [10,45,32,47,50,1,56];
+
+    let max = -1;
+    for(let i=0;i<maxer.length; i++){
+        if(max <maxer[i] ){
+            max = maxer[i];
+        }
+    }
+    console.log(max);
+    //samelogic by reduce method:-
+
+    let max1 = maxer.reduce((maxx,el)=>{
+        if(maxx < el){
+            return el;
+        }
+        return maxx; 
+    })
+
+    console.log(max1);
+
+
+
+}catch(er){
+    console.log("Something goes wrong, err is below");
+    console.log("\n");
+    console.log(er);
+}
+
+
+
+
+//--------------pratice question
+
+//Qs1. check if all numebr in out array are multiple of 10 or not
+//Qs2. create a function to find the min number in array
+
+try{    
+    let arr = [10,12,23,15,20,561,23,30];
+
+    let finder = arr.every((i) => {
+        return (i%10==0);
+    })
+
+    console.log(finder);
+
+
+    //Qs2.
+    function getmin(arr){
+        let miner = arr.reduce((red,el) => {
+            if(red>el){
+                red = el;
+            }else{
+                return red;
             }
-        }, 1000);   
+        });
+        return miner;
     }
-    console.log(func());
-
+    console.log(getmin(arr));
 
 }catch(er){
     console.log("Something goes wrong, err is below");
