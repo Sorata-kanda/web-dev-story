@@ -301,3 +301,91 @@ try{
     console.log("\n");
     console.log(er);
 }
+
+
+try{
+    //default parameters
+
+    function sum(a,b=2){
+        return a+b;
+    }
+
+    console.log(sum(1));
+
+
+    //spread
+    console.log(..."Rahul Jangra");
+    array1 = [12,34,5,23,54,21];
+    let printer = Math.min(array1); //This will give nothing/NaN cause math.min can't read the array1
+    console.log(printer);
+
+    console.log(...array1);
+    let printer1 = Math.min(...array1);
+    console.log(printer1); 
+
+    let newarr = array1;
+    console.log(...newarr);
+    let char = "Rahul";
+    let newarr1 = [...char];
+    console.log(newarr1);
+
+    let data = {
+        email: "jangraboy.nature@gmail.com",
+        passwords: "abcd",
+
+    };
+
+    const datadopy = {
+        ...data,
+        id: 123 
+    };
+
+    console.log(datadopy);
+
+    let char1 = "random string"; //we can same do this with an array
+    let chopper = {
+        ...char1
+    };
+    console.log(chopper);
+    
+
+    //Rest
+    function sumer(...argss){
+        for(let i=0; i<argss.length;i++){
+            console.log(`you gave us ${argss[i]} element`); 
+        }
+        console.log(arguments); //arguments is not a array but a inbuilt function
+
+        return argss.reduce((red,el)=>red+el);
+    }
+
+    console.log(sumer(1,3,2));
+
+
+    //Destructuring
+
+    let names = ["tony", "bruce", "steve","Hogward","random1", "random2", "random3","random4"];
+    let [winner, runnerup, secondrunnerup, ...rest] = names;
+    console.log(winner,runnerup, secondrunnerup, ...rest); 
+
+
+
+    const stud = {
+        name: "Rahul",
+        age : 18,
+        city: "Hisar",
+        subjects: ["English", "Hindi", "Math"],
+        username: "asdljaldk@123"
+    }
+
+    let {username: secret, name:secret1, age:secret2, city:secret3, district:secret4 = "Bhiwani"} = stud;
+
+    console.log(secret,secret1,secret2,secret3,secret4);
+     
+
+    
+}catch(er){
+    console.log("Something goes wrong, err is below");
+    console.log("\n");
+    console.log(er);
+}
