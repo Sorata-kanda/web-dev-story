@@ -267,6 +267,66 @@ try{
     console.log(obj.method(123));
 
 
+    //------------------part - 8
+
+    //Qs1. Square and sum the array elements using the arrow function and then find the
+    // average of the array.
+
+    let array = [1,2,3,4,5];
+    let summ =0;
+    let sq = array.map((el) => {
+        summ += el*el;
+        return summ;
+    });
+    console.log(sq);
+    console.log(summ/array.length);
+
+    //Qs2. Create a new array using the map function whose each element is equal to the
+    //original element plus 5.
+
+    console.log(array);
+    let copier = array.map((el) => {
+        el = el+5;
+        return el;
+    })
+    console.log(copier);
+
+
+    //Qs3. Create a new array whose elements are in uppercase of words present in the
+    // original array
+
+    let array2 = ["rahul","Jangra"];
+    let uppercased = array2.map((el)=>{
+        return el.toUpperCase();
+    });
+    console.log(uppercased);
+
+    //Qs4. Write a function called doubleAndReturnArgs which accepts an array and a
+    // variable number of arguments. The function should return a new array with the original
+    // array values and all of the additional arguments doubled.
+    
+    let doubleAndReturnArgs = (arr,...args) => [
+        ...arr,...args.map((el)=> el*2)
+    ];
+
+    console.log(doubleAndReturnArgs([1,2,3],4,5));
+
+
+
+    //Qs5. Write a function called mergeObjects that accepts two objects and returns a new
+    // object which contains all the keys and values of the first object and second object.
+
+    let obj1 = {
+        name : "rahul",
+        class: "college",
+    }
+    let obj2 = {
+        name: "Aryan",
+        class : "college"
+    }
+
+    let mergeObjects = (ob1, ob2) =>( {...ob1 ,...ob2});
+    console.log(mergeObjects({obj1},{obj2}));
 
 
 
