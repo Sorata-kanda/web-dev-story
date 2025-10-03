@@ -32,3 +32,15 @@ Img {
 #description {
     background-color: antiquewhite;
 }
+
+.green{
+    color: green;   
+}
+
+.underline{
+    text-decoration: underline green wavy;
+}
+
+.yellowbg{
+    background-color: yellow;
+}
