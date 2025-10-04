@@ -100,5 +100,48 @@ let box = document.querySelector(".box");
 console.log(box.classList.toggle("yellowbg"));
 
 
+//navigation
+let heading4 = document.querySelector('h4');
+console.log(heading4.parentElement);
+console.log(box.children);
 
+let ul = document.querySelector("ul");
+console.log(ul.children);
+
+console.log(ul.children[0]);
+console.log(ul.children[1].previousElementSibling);
+console.log(ul.children[1].nextElementSibling);
+
+console.log(img.previousElementSibling);
+img.previousElementSibling.style.color = "skyblue";
+img.previousElementSibling.style.backgroundColor = "black";
+
+//Adding Elements:- append, appendChils, prepend, insertAdjancent(where,elemen)
+
+
+let newP = document.createElement('p'); 
+newP.innerText = "Hi, I am a new P";
+
+let body = document.querySelector("body");
+
+box.appendChild(newP);
+// newP.style.backgroundColor = "lightgray";
+
+let btn = document.createElement("button");
+btn.innerText = "Click Me";
+box.appendChild(btn);
+newP.append(" This is new text")
+newP.append(btn);
+newP.prepend("This is new prepend text. ");
+
+let btn1 = document.createElement("button");
+btn1.innerText = "New  Button!!!";
+
+p = document.querySelector("p");
+// p.insertAdjacentElement("beforebegin", btn1);
+p.insertAdjacentElement("beforeend", btn1);
+// p.insertAdjacentElement("afterend", btn1);
+
+p.removeChild(btn1);
+p.remove(); //another function to remove things
 
