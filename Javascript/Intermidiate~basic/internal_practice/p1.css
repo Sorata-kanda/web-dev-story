@@ -1,0 +1,59 @@
+/* div{
+    background-color: pink;
+    height: 200px;
+    width: 400px;
+}
+
+ul{
+    background-color: blue;
+
+}
+li{
+    background-color: greenyellow;
+} */
+
+
+
+/* Task - 2 */
+
+body{
+    font-family: cursive;
+}
+h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.take{
+    text-align: center; 
+    margin-bottom: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    border-radius: 10px;
+    height: 30px;
+    border: 1px solid black;
+}
+.tasked{
+    background-color: rgb(0, 136, 255);
+    border: none;
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    border-radius: 10px;
+    color: white;   
+}
+
+.tasked:active{
+    background-color: rgb(0, 68, 255);
+}
+.delete{
+    margin-left: 10rem;
+}
+li{
+    margin-bottom: 10px;
+   
+}
+ul{
+    margin: auto;
+}
