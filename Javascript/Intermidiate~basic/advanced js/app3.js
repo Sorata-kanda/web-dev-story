@@ -145,28 +145,118 @@
 
 //-----------------writing the same color changing code using promises
 
-h1 = document.querySelector('h1');
-function changeColor(color,delay){   
-    return new Promise((resolve,reject) => {
-        setTimeout(() => {
-            h1.style.color = color;
-            resolve("color changed");  
-        },delay);
+// h1 = document.querySelector('h1');
+// function changeColor(color,delay){   
+//     return new Promise((resolve,reject) => {
+//         setTimeout(() => {
+//             h1.style.color = color;
+//             resolve("color changed");  
+//         },delay);
 
-        // reject("Failure");
-    });
+//         // reject("Failure");
+//     });
+// }
+
+// changeColor("red",1000)
+//     .then(()=>{
+//         console.log("red completed");
+//         return changeColor("hotpink",1000);
+//     })
+//     .then(() => {
+//         console.log("hotpink completed");
+//         return changeColor("teal",1000);
+//     })
+//     .then(() => {
+//         console.log("teal completed");
+//         return changeColor("skyblue",1000);
+//     });
+
+
+
+
+
+
+
+//-------------------------------Aysnc and await funciton
+
+
+// async function always return promises
+
+// async function greet(){
+    
+//     return "hello";
+// }
+
+// greet()
+// .then((result) =>{
+//     console.log("pormise was resolved");
+//     console.log("result was: ", result);
+// })
+// .catch((err) =>{
+//     console.log("promise was rejected with err: ", err);
+// })
+
+// //async arrow function
+
+// let demo = async () =>{
+//     return 5;
+// }
+
+//await keyword
+
+
+// function getNum(){
+    
+//     return new Promise((resolve,reject) =>{
+//         setTimeout(() => {
+//             let num = Math.floor(Math.random() *10 ) +1;
+//             console.log(num);
+//             resolve();
+//         }, 1000);
+//     });
+// }
+// async function demo(){
+//     await getNum();
+//     await getNum();
+//     await getNum();
+
+// }
+
+// demo();
+
+
+//h1 color changing by async function
+
+let heading = document.querySelector('h1');
+async function colorChanger(color){
+    
+    return new Promise((resolve,reject) =>{
+        
+        setTimeout(() => {
+            let num = Math.floor(Math.random() *10 ) +1;
+            if(num<4){
+                reject("promise rejected");
+            }
+            heading.style.color = color;
+            console.log("color changed");
+            resolve();
+        }, 1000);
+    })
 }
 
-changeColor("red",1000)
-    .then(()=>{
-        console.log("red completed");
-        return changeColor("hotpink",1000);
-    })
-    .then(() => {
-        console.log("hotpink completed");
-        return changeColor("teal",1000);
-    })
-    .then(() => {
-        console.log("teal completed");
-        return changeColor("skyblue",1000);
-    });
+
+async function changer(){
+    try{
+        await colorChanger("red");
+        await colorChanger("teal");
+        await colorChanger("blue");
+    }catch(err){
+        console.log(err);
+    }       
+
+    let a = 5;
+    console.log(a);
+    console.log("new number = ",a+3);
+}
+
+changer();
