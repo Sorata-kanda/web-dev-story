@@ -1,0 +1,94 @@
+html,body{
+    height: 100%;
+    margin: 0;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+}
+
+.pimg1{
+    background-image: url(assests/aerial-view-phang-nga-bay-with-mountains-sunrise-thailand.jpg);
+    min-height: 100%;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pimg2{
+    background-image: url(assests/dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+    min-height: 400px;
+}
+
+.pimg3{
+    background-image: url(assests/henry-be-IicyiaPYGGI-unsplash.jpg);
+    min-height: 400px;
+}
+.pimg4 {
+    background-image: url(assests/pavel-s-qcWkHhYfp4s-unsplash.jpg);
+    min-height: 100%;
+    
+}
+
+.pimg1, .pimg2, .pimg3, .pimg4{
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+    /* right: 50%; */
+    /* background-color:black; */
+    font-size: 27px;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+
+}
+
+.textBg{
+    background-color: #313534;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+    border-radius: 1px;
+    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.4);
+}
+
+.section{
+    padding: 50px 80px;
+    text-align: center;
+
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.section-dark{
+    background-color: #313534;
+    color: #DDD;
+}
+.textBg4{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.7);
+    letter-spacing: 30px;
+}
+.textBg3{
+    color: #313534;
+    font-size: 50px;
+    text-shadow: 0px 10px 10px rgba(83, 82, 82, 0.7);
+    letter-spacing: 10px;
+}
+.textBg2{
+    color: #ffffff;
+    font-size: 50px;
+    text-shadow: 7px 5px 20px rgb(255, 255, 255);
+    letter-spacing: 10px;
+}
