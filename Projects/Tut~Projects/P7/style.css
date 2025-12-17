@@ -113,6 +113,7 @@ header ul a {
 }
 
 .blackhole-box {
+    z-index: -1;
     position: absolute;
     top: 0;
     width: 100%;
@@ -215,7 +216,7 @@ header ul a {
 
 .hero-vid-box video {
     height: 980px;
-    mix-blend-mode: difference;
+    mix-blend-mode: lighten;
 }
 
 .scroll-down {
@@ -350,7 +351,7 @@ header ul a {
 
 .card button {
     color: white;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border-radius: 10px solid #727fdeb4;
     border: 1px solid #2200493d;
     background-color: #727fde86;
@@ -399,10 +400,98 @@ header ul a {
     bottom: 35%;
 }
 
+/* My projects */
 
+.my-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    align-items: center;
+    position: relative;
+    width: 80%;
+    margin-top: 200px;
+    margin-bottom: 700px;
 
+}
 
+.project-card {
+    display: flex;d
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    gap: 10%;
+    justify-content: center;
 
+}
+
+.project-vidbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    cursor: pointer;
+    min-width: 400px;
+    transition: 0.5s;
+    mix-blend-mode: exclusion;
+
+}
+
+.project-vidbox video {
+    object-fit: cover;
+    width: 100%;
+    box-shadow: 0 0 10px lightgray;
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+
+.project-vidbox video:hover {
+    box-shadow: 0 0 20px lightgray;
+}
+
+.project-info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 50%;
+    padding-left: 10%;
+
+}
+
+.project-info h1 {
+    width: 90%;
+    font-size: bold;
+    text-wrap: nowrap;
+    margin-bottom: 10px;
+    margin-top: 0;
+    max-width: 450px;
+}
+
+.project-info p {
+    width: 90%;
+    max-width: 90%;
+    min-width: 300px;
+    margin-bottom: 50px;
+    margin-top: 0;
+}
+
+.project-info button {
+    color: white;
+    padding: 10px 15px;
+    border-radius: 10px solid #727fdeb4;
+    border: 1px solid #2200493d;
+    background-color: #727fde86;
+    box-shadow: 0 0 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-info button:hover {
+    box-shadow: 0 0 15px #727fde86;
+    opacity: 0.7;
+}
 
 
 
